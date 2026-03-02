@@ -13,7 +13,7 @@ function App() {
   // 🔹 Dynamic basename: / for localhost, /secure-payment-system for production
   const basename =
     import.meta.env.MODE === "production"
-      ? "/secure-payment-system"
+      ? "/secure-payment-frontend"
       : "/";
 
   return (
