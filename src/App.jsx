@@ -10,10 +10,10 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import "./App.css";
 
 function App() {
-  // 🔹 Dynamic basename: / for localhost, /react-employee-management for production
+  // 🔹 Dynamic basename: / for localhost, /secure-payment-system for production
   const basename =
     import.meta.env.MODE === "production"
-      ? "/react-employee-management"
+      ? "/secure-payment-system"
       : "/";
 
   return (
