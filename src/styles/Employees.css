@@ -1,0 +1,41 @@
+.employee-container {
+    padding: 30px;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+}
+
+.title {
+    color: #222;
+    /* FIX h2/h3 white issue */
+    margin-bottom: 20px;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.employee-table th {
+    background-color: #1e293b;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.employee-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #333;
+}
+
+.employee-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}

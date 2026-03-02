@@ -1,0 +1,59 @@
+/* Overall page */
+.dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f8;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* HEADER */
+.dashboard-header {
+    background-color: #1f2937;
+    /* dark slate */
+    color: #ffffff;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* TABS */
+.dashboard-tabs {
+    display: flex;
+    gap: 20px;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-tabs a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+
+/* Active tab */
+.dashboard-tabs a.active {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* CONTENT AREA */
+.dashboard-content {
+    flex: 1;
+    padding: 24px;
+    background-color: #f9fafb;
+    overflow-y: auto;
+    color:black;
+}
+
+/* FOOTER */
+.dashboard-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 10px 24px;
+    font-size: 13px;
+    color: #6b7280;
+    text-align: center;
+}

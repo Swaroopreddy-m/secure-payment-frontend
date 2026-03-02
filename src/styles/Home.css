@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* LEFT BRANDING (hidden on mobile) */
+.login-left {
+    display: none;
+    color: white;
+}
+
+/* LOGIN CARD (Mobile First) */
+.login-card {
+    width: 100%;
+    max-width: 380px;
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 8px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.login-card input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.login-btn,
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+}
+
+.login-btn:hover {
+    background: #5a67d8;
+}
+
+.signup-btn {
+    background: transparent;
+    border: 1px solid #667eea;
+    color: #667eea;
+}
+
+.signup-btn:hover {
+    background: #667eea;
+    color: white;
+}
+
+.divider {
+    margin: 16px 0;
+    font-size: 13px;
+    color: #999;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .login-card {
+        max-width: 420px;
+        padding: 40px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .login-container {
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .login-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 420px;
+    }
+
+    .login-left h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+    .login-left b {
+            color:yellow;
+        }
+
+    .login-left p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    .login-card {
+        max-width: 420px;
+    }
+}
